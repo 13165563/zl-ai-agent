@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.zluolan.zaiagent.controller.TravelControllerTest" time="17.108" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="C:\ProgramFiles\AllCodeProjects\zl-ai-agent\target\test-classes;C:\ProgramFiles\AllCodeProjects\zl-ai-agent\target\classes;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.4.5\spring-boot-starter-web-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.5\spring-boot-starter-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot\3.4.5\spring-boot-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.5\spring-boot-autoconfigure-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.5\spring-boot-starter-logging-3.4.5.jar;C:\Users\zluolan\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\zluolan\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\zluolan\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\zluolan\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\zluolan\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\zluolan\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\zluolan\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.4.5\spring-boot-starter-json-3.4.5.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.18.3\jackson-datatype-jdk8-2.18.3.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.18.3\jackson-datatype-jsr310-2.18.3.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.18.3\jackson-module-parameter-names-2.18.3.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.4.5\spring-boot-starter-tomcat-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.40\tomcat-embed-core-10.1.40.jar;C:\Users\zluolan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.40\tomcat-embed-el-10.1.40.jar;C:\Users\zluolan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.40\tomcat-embed-websocket-10.1.40.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-web\6.2.6\spring-web-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-beans\6.2.6\spring-beans-6.2.6.jar;C:\Users\zluolan\.m2\repository\io\micrometer\micrometer-observation\1.14.6\micrometer-observation-1.14.6.jar;C:\Users\zluolan\.m2\repository\io\micrometer\micrometer-commons\1.14.6\micrometer-commons-1.14.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-webmvc\6.2.6\spring-webmvc-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-aop\6.2.6\spring-aop-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-context\6.2.6\spring-context-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-expression\6.2.6\spring-expression-6.2.6.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter-dashscope\1.0.0.2\spring-ai-alibaba-starter-dashscope-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-autoconfigure-dashscope\1.0.0.2\spring-ai-alibaba-autoconfigure-dashscope-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-retry\1.0.0\spring-ai-autoconfigure-retry-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-tool\1.0.0\spring-ai-autoconfigure-model-tool-1.0.0.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter-memory\1.0.0.2\spring-ai-alibaba-starter-memory-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-autoconfigure-memory\1.0.0.2\spring-ai-alibaba-autoconfigure-memory-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter-memory-redis\1.0.0.2\spring-ai-alibaba-starter-memory-redis-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter-memory-elasticsearch\1.0.0.2\spring-ai-alibaba-starter-memory-elasticsearch-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter-memory-jdbc\1.0.0.2\spring-ai-alibaba-starter-memory-jdbc-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-core\1.0.0.2\spring-ai-alibaba-core-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-model\1.0.0\spring-ai-model-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-template-st\1.0.0\spring-ai-template-st-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\antlr\ST4\4.3.4\ST4-4.3.4.jar;C:\Users\zluolan\.m2\repository\org\antlr\antlr-runtime\3.5.3\antlr-runtime-3.5.3.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-messaging\6.2.6\spring-messaging-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\zluolan\.m2\repository\com\github\victools\jsonschema-module-jackson\4.37.0\jsonschema-module-jackson-4.37.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-rag\1.0.0\spring-ai-rag-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-retry\1.0.0\spring-ai-retry-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\retry\spring-retry\2.0.11\spring-retry-2.0.11.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-webflux\6.2.6\spring-webflux-6.2.6.jar;C:\Users\zluolan\.m2\repository\commons-codec\commons-codec\1.17.2\commons-codec-1.17.2.jar;C:\Users\zluolan\.m2\repository\org\apache\opennlp\opennlp-tools\2.3.3\opennlp-tools-2.3.3.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-model-chat-memory-repository-jdbc\1.0.0\spring-ai-model-chat-memory-repository-jdbc-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.4.5\spring-boot-starter-jdbc-3.4.5.jar;C:\Users\zluolan\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-jdbc\6.2.6\spring-jdbc-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-tx\6.2.6\spring-tx-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-starter-model-ollama\1.0.0\spring-ai-starter-model-ollama-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-ollama\1.0.0\spring-ai-autoconfigure-model-ollama-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-chat-observation\1.0.0\spring-ai-autoconfigure-model-chat-observation-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-embedding-observation\1.0.0\spring-ai-autoconfigure-model-embedding-observation-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-ollama\1.0.0\spring-ai-ollama-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-chat-client\1.0.0\spring-ai-autoconfigure-model-chat-client-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-chat-memory\1.0.0\spring-ai-autoconfigure-model-chat-memory-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-markdown-document-reader\1.0.0\spring-ai-markdown-document-reader-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-commons\1.0.0\spring-ai-commons-1.0.0.jar;C:\Users\zluolan\.m2\repository\io\micrometer\micrometer-core\1.14.6\micrometer-core-1.14.6.jar;C:\Users\zluolan\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.2\HdrHistogram-2.2.2.jar;C:\Users\zluolan\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\zluolan\.m2\repository\io\micrometer\context-propagation\1.1.3\context-propagation-1.1.3.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\module\jackson-module-jsonSchema\2.18.3\jackson-module-jsonSchema-2.18.3.jar;C:\Users\zluolan\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\zluolan\.m2\repository\com\knuddels\jtokkit\1.1.0\jtokkit-1.1.0.jar;C:\Users\zluolan\.m2\repository\org\commonmark\commonmark\0.22.0\commonmark-0.22.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-advisors-vector-store\1.0.0\spring-ai-advisors-vector-store-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-client-chat\1.0.0\spring-ai-client-chat-1.0.0.jar;C:\Users\zluolan\.m2\repository\io\swagger\core\v3\swagger-annotations\2.2.25\swagger-annotations-2.2.25.jar;C:\Users\zluolan\.m2\repository\com\github\victools\jsonschema-module-swagger-2\4.37.0\jsonschema-module-swagger-2-4.37.0.jar;C:\Users\zluolan\.m2\repository\io\projectreactor\reactor-core\3.7.5\reactor-core-3.7.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-vector-store\1.0.0\spring-ai-vector-store-1.0.0.jar;C:\Users\zluolan\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\zluolan\.m2\repository\org\postgresql\postgresql\42.7.5\postgresql-42.7.5.jar;C:\Users\zluolan\.m2\repository\org\checkerframework\checker-qual\3.48.3\checker-qual-3.48.3.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-pgvector-store\1.0.0\spring-ai-pgvector-store-1.0.0.jar;C:\Users\zluolan\.m2\repository\com\pgvector\pgvector\0.1.6\pgvector-0.1.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-starter-mcp-client\1.0.0\spring-ai-starter-mcp-client-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-mcp-client\1.0.0\spring-ai-autoconfigure-mcp-client-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-mcp\1.0.0\spring-ai-mcp-1.0.0.jar;C:\Users\zluolan\.m2\repository\io\modelcontextprotocol\sdk\mcp\0.10.0\mcp-0.10.0.jar;C:\Users\zluolan\.m2\repository\org\jsoup\jsoup\1.19.1\jsoup-1.19.1.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\barcodes\9.1.0\barcodes-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\forms\9.1.0\forms-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\hyph\9.1.0\hyph-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\io\9.1.0\io-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\commons\9.1.0\commons-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\kernel\9.1.0\kernel-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\layout\9.1.0\layout-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\pdfa\9.1.0\pdfa-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\sign\9.1.0\sign-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\styled-xml-parser\9.1.0\styled-xml-parser-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\svg\9.1.0\svg-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\bouncy-castle-connector\9.1.0\bouncy-castle-connector-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\pdfua\9.1.0\pdfua-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\font-asian\9.1.0\font-asian-9.1.0.jar;C:\Users\zluolan\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\zluolan\.m2\repository\cn\hutool\hutool-all\5.8.37\hutool-all-5.8.37.jar;C:\Users\zluolan\.m2\repository\com\github\xiaoymin\knife4j-openapi3-jakarta-spring-boot-starter\4.4.0\knife4j-openapi3-jakarta-spring-boot-starter-4.4.0.jar;C:\Users\zluolan\.m2\repository\com\github\xiaoymin\knife4j-core\4.4.0\knife4j-core-4.4.0.jar;C:\Users\zluolan\.m2\repository\com\github\xiaoymin\knife4j-openapi3-ui\4.4.0\knife4j-openapi3-ui-4.4.0.jar;C:\Users\zluolan\.m2\repository\com\github\victools\jsonschema-generator\4.38.0\jsonschema-generator-4.38.0.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\zluolan\.m2\repository\com\alibaba\dashscope-sdk-java\2.20.1\dashscope-sdk-java-2.20.1.jar;C:\Users\zluolan\.m2\repository\io\reactivex\rxjava2\rxjava\2.2.21\rxjava-2.2.21.jar;C:\Users\zluolan\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\zluolan\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\zluolan\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\zluolan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.9.25\kotlin-stdlib-jdk8-1.9.25.jar;C:\Users\zluolan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.25\kotlin-stdlib-1.9.25.jar;C:\Users\zluolan\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\zluolan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.9.25\kotlin-stdlib-jdk7-1.9.25.jar;C:\Users\zluolan\.m2\repository\com\squareup\okio\okio\3.6.0\okio-3.6.0.jar;C:\Users\zluolan\.m2\repository\com\squareup\okio\okio-jvm\3.6.0\okio-jvm-3.6.0.jar;C:\Users\zluolan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.9.25\kotlin-stdlib-common-1.9.25.jar;C:\Users\zluolan\.m2\repository\com\squareup\okhttp3\logging-interceptor\4.12.0\logging-interceptor-4.12.0.jar;C:\Users\zluolan\.m2\repository\com\squareup\okhttp3\okhttp-sse\4.12.0\okhttp-sse-4.12.0.jar;C:\Users\zluolan\.m2\repository\com\squareup\okhttp3\okhttp\4.12.0\okhttp-4.12.0.jar;C:\Users\zluolan\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\zluolan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;C:\Users\zluolan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;C:\Users\zluolan\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;C:\Users\zluolan\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;C:\Users\zluolan\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\zluolan\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;C:\Users\zluolan\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;C:\Users\zluolan\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.18.3\jackson-dataformat-yaml-2.18.3.jar;C:\Users\zluolan\.m2\repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;C:\Users\zluolan\.m2\repository\com\esotericsoftware\kryo\5.6.2\kryo-5.6.2.jar;C:\Users\zluolan\.m2\repository\com\esotericsoftware\reflectasm\1.11.9\reflectasm-1.11.9.jar;C:\Users\zluolan\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\zluolan\.m2\repository\com\esotericsoftware\minlog\1.3.1\minlog-1.3.1.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.5\spring-boot-starter-test-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-test\3.4.5\spring-boot-test-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.5\spring-boot-test-autoconfigure-3.4.5.jar;C:\Users\zluolan\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\zluolan\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\zluolan\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\zluolan\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\zluolan\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\zluolan\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\zluolan\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\zluolan\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\zluolan\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\zluolan\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\zluolan\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.4\junit-jupiter-5.11.4.jar;C:\Users\zluolan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.4\junit-jupiter-api-5.11.4.jar;C:\Users\zluolan\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\zluolan\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\zluolan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\zluolan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.4\junit-jupiter-params-5.11.4.jar;C:\Users\zluolan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.4\junit-jupiter-engine-5.11.4.jar;C:\Users\zluolan\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\zluolan\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\zluolan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar;C:\Users\zluolan\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\zluolan\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\zluolan\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-core\6.2.6\spring-core-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-jcl\6.2.6\spring-jcl-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-test\6.2.6\spring-test-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="APPLICATION_NAME" value="travel-planner"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="C:\Users\zluolan\.jdks\ms-21.0.8\bin"/>
+    <property name="sun.java.command" value="C:\Users\zluolan\AppData\Local\Temp\surefire16462373691669974479\surefirebooter-20251023153756865_3.jar C:\Users\zluolan\AppData\Local\Temp\surefire16462373691669974479 2025-10-23T15-37-56_751-jvmRun1 surefire-20251023153756865_1tmp surefire_0-20251023153756865_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\ProgramFiles\AllCodeProjects\zl-ai-agent\target\test-classes;C:\ProgramFiles\AllCodeProjects\zl-ai-agent\target\classes;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.4.5\spring-boot-starter-web-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.5\spring-boot-starter-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot\3.4.5\spring-boot-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.5\spring-boot-autoconfigure-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.5\spring-boot-starter-logging-3.4.5.jar;C:\Users\zluolan\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\zluolan\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\zluolan\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\zluolan\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\zluolan\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\zluolan\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\zluolan\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.4.5\spring-boot-starter-json-3.4.5.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.18.3\jackson-datatype-jdk8-2.18.3.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.18.3\jackson-datatype-jsr310-2.18.3.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.18.3\jackson-module-parameter-names-2.18.3.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.4.5\spring-boot-starter-tomcat-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.40\tomcat-embed-core-10.1.40.jar;C:\Users\zluolan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.40\tomcat-embed-el-10.1.40.jar;C:\Users\zluolan\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.40\tomcat-embed-websocket-10.1.40.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-web\6.2.6\spring-web-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-beans\6.2.6\spring-beans-6.2.6.jar;C:\Users\zluolan\.m2\repository\io\micrometer\micrometer-observation\1.14.6\micrometer-observation-1.14.6.jar;C:\Users\zluolan\.m2\repository\io\micrometer\micrometer-commons\1.14.6\micrometer-commons-1.14.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-webmvc\6.2.6\spring-webmvc-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-aop\6.2.6\spring-aop-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-context\6.2.6\spring-context-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-expression\6.2.6\spring-expression-6.2.6.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter-dashscope\1.0.0.2\spring-ai-alibaba-starter-dashscope-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-autoconfigure-dashscope\1.0.0.2\spring-ai-alibaba-autoconfigure-dashscope-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-retry\1.0.0\spring-ai-autoconfigure-retry-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-tool\1.0.0\spring-ai-autoconfigure-model-tool-1.0.0.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter-memory\1.0.0.2\spring-ai-alibaba-starter-memory-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-autoconfigure-memory\1.0.0.2\spring-ai-alibaba-autoconfigure-memory-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter-memory-redis\1.0.0.2\spring-ai-alibaba-starter-memory-redis-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter-memory-elasticsearch\1.0.0.2\spring-ai-alibaba-starter-memory-elasticsearch-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-starter-memory-jdbc\1.0.0.2\spring-ai-alibaba-starter-memory-jdbc-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\com\alibaba\cloud\ai\spring-ai-alibaba-core\1.0.0.2\spring-ai-alibaba-core-1.0.0.2.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-model\1.0.0\spring-ai-model-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-template-st\1.0.0\spring-ai-template-st-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\antlr\ST4\4.3.4\ST4-4.3.4.jar;C:\Users\zluolan\.m2\repository\org\antlr\antlr-runtime\3.5.3\antlr-runtime-3.5.3.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-messaging\6.2.6\spring-messaging-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\zluolan\.m2\repository\com\github\victools\jsonschema-module-jackson\4.37.0\jsonschema-module-jackson-4.37.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-rag\1.0.0\spring-ai-rag-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-retry\1.0.0\spring-ai-retry-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\retry\spring-retry\2.0.11\spring-retry-2.0.11.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-webflux\6.2.6\spring-webflux-6.2.6.jar;C:\Users\zluolan\.m2\repository\commons-codec\commons-codec\1.17.2\commons-codec-1.17.2.jar;C:\Users\zluolan\.m2\repository\org\apache\opennlp\opennlp-tools\2.3.3\opennlp-tools-2.3.3.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-model-chat-memory-repository-jdbc\1.0.0\spring-ai-model-chat-memory-repository-jdbc-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.4.5\spring-boot-starter-jdbc-3.4.5.jar;C:\Users\zluolan\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-jdbc\6.2.6\spring-jdbc-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-tx\6.2.6\spring-tx-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-starter-model-ollama\1.0.0\spring-ai-starter-model-ollama-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-ollama\1.0.0\spring-ai-autoconfigure-model-ollama-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-chat-observation\1.0.0\spring-ai-autoconfigure-model-chat-observation-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-embedding-observation\1.0.0\spring-ai-autoconfigure-model-embedding-observation-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-ollama\1.0.0\spring-ai-ollama-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-chat-client\1.0.0\spring-ai-autoconfigure-model-chat-client-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-model-chat-memory\1.0.0\spring-ai-autoconfigure-model-chat-memory-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-markdown-document-reader\1.0.0\spring-ai-markdown-document-reader-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-commons\1.0.0\spring-ai-commons-1.0.0.jar;C:\Users\zluolan\.m2\repository\io\micrometer\micrometer-core\1.14.6\micrometer-core-1.14.6.jar;C:\Users\zluolan\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.2\HdrHistogram-2.2.2.jar;C:\Users\zluolan\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\zluolan\.m2\repository\io\micrometer\context-propagation\1.1.3\context-propagation-1.1.3.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\module\jackson-module-jsonSchema\2.18.3\jackson-module-jsonSchema-2.18.3.jar;C:\Users\zluolan\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\zluolan\.m2\repository\com\knuddels\jtokkit\1.1.0\jtokkit-1.1.0.jar;C:\Users\zluolan\.m2\repository\org\commonmark\commonmark\0.22.0\commonmark-0.22.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-advisors-vector-store\1.0.0\spring-ai-advisors-vector-store-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-client-chat\1.0.0\spring-ai-client-chat-1.0.0.jar;C:\Users\zluolan\.m2\repository\io\swagger\core\v3\swagger-annotations\2.2.25\swagger-annotations-2.2.25.jar;C:\Users\zluolan\.m2\repository\com\github\victools\jsonschema-module-swagger-2\4.37.0\jsonschema-module-swagger-2-4.37.0.jar;C:\Users\zluolan\.m2\repository\io\projectreactor\reactor-core\3.7.5\reactor-core-3.7.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-vector-store\1.0.0\spring-ai-vector-store-1.0.0.jar;C:\Users\zluolan\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\zluolan\.m2\repository\org\postgresql\postgresql\42.7.5\postgresql-42.7.5.jar;C:\Users\zluolan\.m2\repository\org\checkerframework\checker-qual\3.48.3\checker-qual-3.48.3.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-pgvector-store\1.0.0\spring-ai-pgvector-store-1.0.0.jar;C:\Users\zluolan\.m2\repository\com\pgvector\pgvector\0.1.6\pgvector-0.1.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-starter-mcp-client\1.0.0\spring-ai-starter-mcp-client-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-autoconfigure-mcp-client\1.0.0\spring-ai-autoconfigure-mcp-client-1.0.0.jar;C:\Users\zluolan\.m2\repository\org\springframework\ai\spring-ai-mcp\1.0.0\spring-ai-mcp-1.0.0.jar;C:\Users\zluolan\.m2\repository\io\modelcontextprotocol\sdk\mcp\0.10.0\mcp-0.10.0.jar;C:\Users\zluolan\.m2\repository\org\jsoup\jsoup\1.19.1\jsoup-1.19.1.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\barcodes\9.1.0\barcodes-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\forms\9.1.0\forms-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\hyph\9.1.0\hyph-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\io\9.1.0\io-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\commons\9.1.0\commons-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\kernel\9.1.0\kernel-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\layout\9.1.0\layout-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\pdfa\9.1.0\pdfa-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\sign\9.1.0\sign-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\styled-xml-parser\9.1.0\styled-xml-parser-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\svg\9.1.0\svg-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\bouncy-castle-connector\9.1.0\bouncy-castle-connector-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\pdfua\9.1.0\pdfua-9.1.0.jar;C:\Users\zluolan\.m2\repository\com\itextpdf\font-asian\9.1.0\font-asian-9.1.0.jar;C:\Users\zluolan\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\zluolan\.m2\repository\cn\hutool\hutool-all\5.8.37\hutool-all-5.8.37.jar;C:\Users\zluolan\.m2\repository\com\github\xiaoymin\knife4j-openapi3-jakarta-spring-boot-starter\4.4.0\knife4j-openapi3-jakarta-spring-boot-starter-4.4.0.jar;C:\Users\zluolan\.m2\repository\com\github\xiaoymin\knife4j-core\4.4.0\knife4j-core-4.4.0.jar;C:\Users\zluolan\.m2\repository\com\github\xiaoymin\knife4j-openapi3-ui\4.4.0\knife4j-openapi3-ui-4.4.0.jar;C:\Users\zluolan\.m2\repository\com\github\victools\jsonschema-generator\4.38.0\jsonschema-generator-4.38.0.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\zluolan\.m2\repository\com\alibaba\dashscope-sdk-java\2.20.1\dashscope-sdk-java-2.20.1.jar;C:\Users\zluolan\.m2\repository\io\reactivex\rxjava2\rxjava\2.2.21\rxjava-2.2.21.jar;C:\Users\zluolan\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\zluolan\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\zluolan\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\zluolan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk8\1.9.25\kotlin-stdlib-jdk8-1.9.25.jar;C:\Users\zluolan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.9.25\kotlin-stdlib-1.9.25.jar;C:\Users\zluolan\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\zluolan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-jdk7\1.9.25\kotlin-stdlib-jdk7-1.9.25.jar;C:\Users\zluolan\.m2\repository\com\squareup\okio\okio\3.6.0\okio-3.6.0.jar;C:\Users\zluolan\.m2\repository\com\squareup\okio\okio-jvm\3.6.0\okio-jvm-3.6.0.jar;C:\Users\zluolan\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.9.25\kotlin-stdlib-common-1.9.25.jar;C:\Users\zluolan\.m2\repository\com\squareup\okhttp3\logging-interceptor\4.12.0\logging-interceptor-4.12.0.jar;C:\Users\zluolan\.m2\repository\com\squareup\okhttp3\okhttp-sse\4.12.0\okhttp-sse-4.12.0.jar;C:\Users\zluolan\.m2\repository\com\squareup\okhttp3\okhttp\4.12.0\okhttp-4.12.0.jar;C:\Users\zluolan\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\zluolan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.5.0\springdoc-openapi-starter-webmvc-ui-2.5.0.jar;C:\Users\zluolan\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.5.0\springdoc-openapi-starter-webmvc-api-2.5.0.jar;C:\Users\zluolan\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.5.0\springdoc-openapi-starter-common-2.5.0.jar;C:\Users\zluolan\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.21\swagger-core-jakarta-2.2.21.jar;C:\Users\zluolan\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\zluolan\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.21\swagger-annotations-jakarta-2.2.21.jar;C:\Users\zluolan\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.21\swagger-models-jakarta-2.2.21.jar;C:\Users\zluolan\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\zluolan\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.18.3\jackson-dataformat-yaml-2.18.3.jar;C:\Users\zluolan\.m2\repository\org\webjars\swagger-ui\5.13.0\swagger-ui-5.13.0.jar;C:\Users\zluolan\.m2\repository\com\esotericsoftware\kryo\5.6.2\kryo-5.6.2.jar;C:\Users\zluolan\.m2\repository\com\esotericsoftware\reflectasm\1.11.9\reflectasm-1.11.9.jar;C:\Users\zluolan\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\zluolan\.m2\repository\com\esotericsoftware\minlog\1.3.1\minlog-1.3.1.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.5\spring-boot-starter-test-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-test\3.4.5\spring-boot-test-3.4.5.jar;C:\Users\zluolan\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.5\spring-boot-test-autoconfigure-3.4.5.jar;C:\Users\zluolan\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\zluolan\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\zluolan\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\zluolan\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\zluolan\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\zluolan\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\zluolan\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\zluolan\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\zluolan\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\zluolan\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\zluolan\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.4\junit-jupiter-5.11.4.jar;C:\Users\zluolan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.4\junit-jupiter-api-5.11.4.jar;C:\Users\zluolan\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\zluolan\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\zluolan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\zluolan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.4\junit-jupiter-params-5.11.4.jar;C:\Users\zluolan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.4\junit-jupiter-engine-5.11.4.jar;C:\Users\zluolan\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\zluolan\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\zluolan\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar;C:\Users\zluolan\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\zluolan\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\zluolan\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-core\6.2.6\spring-core-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-jcl\6.2.6\spring-jcl-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\springframework\spring-test\6.2.6\spring-test-6.2.6.jar;C:\Users\zluolan\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\zluolan"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="C:\Users\zluolan\.jdks\ms-21.0.8"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\ProgramFiles\AllCodeProjects\zl-ai-agent"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\zluolan\AppData\Local\Temp\surefire16462373691669974479\surefirebooter-20251023153756865_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.8+9-LTS"/>
+    <property name="user.name" value="zluolan"/>
+    <property name="stdout.encoding" value="GBK"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-11933218"/>
+    <property name="localRepository" value="C:\Users\zluolan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\zluolan\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="C:\ProgramFiles\AllCodeProjects\zl-ai-agent"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="23336"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Users\zluolan\.jdks\ms-21.0.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramFiles\nvm;C:\ProgramFiles\nvm4w\nodejs;C:\ProgramFiles\Git\cmd;C:\Program Files (x86)\dotnet\;C:\ProgramFiles\apache-maven-3.9.11\bin;C:\Users\zluolan\.jdks\ms-21.0.8\bin;C:\Users\zluolan\.jdks\ms-17.0.15\bin;C:\Users\zluolan\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\zluolan\AppData\Local\Programs\Python\Python313\;C:\Users\zluolan\AppData\Local\Microsoft\WindowsApps;C:\ProgramFiles\JetBrains\WebStorm2024.1\bin;;C:\ProgramFiles\JetBrains\PyCharm2024.1\bin;;C:\ProgramFiles\JetBrains\IntelliJIDEA2024.1\bin;;C:\ProgramFiles\JetBrains\DataGrip2024.1.1\bin;;C:\Users\zluolan\AppData\Roaming\npm;C:\ProgramFiles\nvm;C:\ProgramFiles\nvm4w\nodejs;C:\ProgramFiles\cursor\resources\app\bin;C:\Users\zluolan\AppData\Local\Programs\Ollama;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="GBK"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="21.0.8+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[travel-planner] "/>
+  </properties>
+  <testcase name="testChatSync" classname="com.zluolan.zaiagent.controller.TravelControllerTest" time="6.516">
+    <system-out><![CDATA[2025-10-23T15:38:27.178+08:00  INFO 23336 --- [travel-planner] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.zluolan.zaiagent.controller.TravelControllerTest]: TravelControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-10-23T15:38:27.215+08:00  INFO 23336 --- [travel-planner] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.zluolan.zaiagent.ZlAiAgentApplication for test class com.zluolan.zaiagent.controller.TravelControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-10-23T15:38:27.253+08:00  INFO 23336 --- [travel-planner] [           main] c.z.z.controller.TravelControllerTest    : Starting TravelControllerTest using Java 21.0.8 with PID 23336 (started by zluolan in C:\ProgramFiles\AllCodeProjects\zl-ai-agent)
+2025-10-23T15:38:27.253+08:00  INFO 23336 --- [travel-planner] [           main] c.z.z.controller.TravelControllerTest    : The following 1 profile is active: "local"
+2025-10-23T15:38:27.805+08:00  INFO 23336 --- [travel-planner] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-10-23T15:38:27.950+08:00  INFO 23336 --- [travel-planner] [           main] c.z.z.controller.TravelControllerTest    : Started TravelControllerTest in 0.734 seconds (process running for 30.876)
+2025-10-23T15:38:27.966+08:00  INFO 23336 --- [travel-planner] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-23T15:38:27.967+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-23T15:38:27.968+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-10-23T15:38:34.454+08:00  INFO 23336 --- [travel-planner] [           main] com.zluolan.zaiagent.app.TravelApp       : TravelApp response: 太棒了！北京是一个充满历史和文化底蕴的城市，有很多值得探索的地方。我很乐意帮助你规划你的北京之旅！ 😊
+
+为了更好地为你提供建议，我需要了解你的一些偏好和旅行时间：
+
+1.  **旅行时间：** 你计划什么时候去北京？ (例如：下个月、几个月、年底等)
+2.  **旅行时长：** 你计划在北京待多久？ (例如：3天、5天、7天、10天等)
+3.  **旅行预算：** 你的预算大概是多少？ (例如：经济型、舒适型、豪华型) 这可以帮助我推荐适合你消费水平的住宿、交通和餐饮。
+4.  **旅行类型：** 你对旅游风格有什么偏好？ (例如：历史文化、现代艺术、美食、自然风光、购物等)
+5.  **同行人员：** 你是独自旅行、和伴侣、和家人还是朋友一起旅行？
+6.  **兴趣爱好：** 你对哪些类型的景点或活动感兴趣？ (例如：故宫、长城、颐和园、天安门广场、胡同游览、博物馆、表演艺术等)
+7.  **住宿偏好：** 你希望住在哪个区域？ (例如：王府井、国贸、三里屯、南锣鼓巷、西单等) 你的住宿预算大概是多少？
+
+总的来说，我可以为你提供以下方面的服务：
+
+**一、行程建议 (基于不同旅行类型和时长):**
+
+*   **经典行程 (3天 - 5天):**  重点参观故宫、天安门广场、颐和园、景山公园、长城（八达岭或慕田峪）、天坛、雍和宫、什刹海等。
+*   **历史文化之旅 (5天以上):**  深入了解北京的历史和文化，可以参观北海公园、恭王府、雍和宫、圆明园（需提前预订）、景山公园等。
+*   **美食之旅:** 体验北京的特色美食，如北京烤鸭、卤煮、炸酱面、小笼包、葱包桧等。
+*   **艺术之旅:** 参观国家博物馆、中国美术馆、新োজিত剧场等。
+
+**二、景点推荐 (以不同类型为例):**
+
+*   **故宫:**  世界文化遗产，感受皇家气派。
+*   **天安门广场:**  北京的象征，可以观看升旗仪式。
+*   **长城:**  雄伟壮丽的历史遗迹，可以选择八达岭长城、慕田峪长城或八里长城。
+*   **颐和园:**  皇家园林，欣赏皇家园设计和古建筑。
+*   **景山公园:**  俯瞰北京的绝佳地点，可以拍摄美丽的夜景。
+*   **胡同:**  体验北京的传统生活方式，可以去南锣鼓巷走走，或者到三里屯玩。
+
+**三、酒店推荐:**
+
+*   **经济型:**  三里屯、南锣鼓巷附近
+*   **舒适型:**  王府井、国贸附近
+*   **豪华型:**  五道口、前门附近
+
+**四、交通建议:**
+
+*   **地铁:** 北京的地铁系统非常发达，是出行最方便的方式。
+*   **公交车:** 线路覆盖广，方便出行。
+*   **出租车/网约车:** 方便快捷。
+
+**五、旅游预算:**
+
+*   **交通:** 100-300元 (根据交通方式和时长)
+*   **住宿:** 500-1500元 (根据酒店类型和住宿时长)
+*   **餐饮:** 300-800元 (根据饮食习惯)
+*   **景点门票:** 300-700元 (根据景点数量和门票价格)
+*   **购物/纪念品:**  根据个人喜好，灵活调整。
+
+**六、旅行小贴士:**
+
+*   **提前预订：** 住宿、景点门票等，最好提前预订。
+*   **注意天气：** 北京的四季分明，了解天气情况，做好相应准备。
+*   **尊重当地文化：** 了解一些基本的礼仪，比如不要大声喧哗、不要乱扔垃圾等。
+*   **学习一些中文：**  简单的中文可以帮助你更好地交流和解决问题。
+
+**请告诉我你的具体情况，我会根据你的需求为你定制一份更详细的北京旅游计划！**  😊 
+
+同步聊天接口测试通过
+]]></system-out>
+  </testcase>
+  <testcase name="testChatWithTools" classname="com.zluolan.zaiagent.controller.TravelControllerTest" time="8.197">
+    <system-out><![CDATA[2025-10-23T15:38:34.475+08:00  INFO 23336 --- [travel-planner] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-23T15:38:34.476+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-23T15:38:34.476+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-10-23T15:38:34.477+08:00  INFO 23336 --- [travel-planner] [           main] c.z.zaiagent.advisor.MyLoggerAdvisor     : AI Request: 搜索北京景点信息
+2025-10-23T15:38:42.663+08:00  INFO 23336 --- [travel-planner] [           main] c.z.zaiagent.advisor.MyLoggerAdvisor     : AI Response: 好的，很高兴为您提供北京景点信息。北京拥有丰富的历史文化底蕴和现代魅力，以下是一些重点景点，我将根据不同人群和兴趣爱好进行分类，并提供详细的介绍和建议：
+
+**一、历史文化经典**
+
+*   **故宫（紫禁城）：** 作为中国现存规模最大、保存最完整的古代宫殿建筑群，是了解中国古代皇权政治的窗口。建议提前预约门票，并安排至少3-4小时参观。
+    *   **亮点：** 宫殿建筑、珍宝馆、御花园，感受皇家气派。
+    *   **交通：** 地铁1号线北宫店站。
+*   **天安门广场：**  中国历史的象征，每年春节和重要节假日都聚集人气。
+    *   **亮点：** 广场的历史、广场上的历史人物，感受历史的厚重。
+    *   **交通：** 地铁1号线天安门站。
+*   **颐和园：** 皇家园林，融合了中国古典园林艺术和中国传统建筑风格，是探索中国水水文化和园林艺术的绝佳场所。
+    *   **亮点：** 昆明湖、圆恩寺、万寿山、青莲峰等景点。
+    *   **交通：** 地铁2号线北宫门站。
+*   **长城：**  世界文化遗产，是中国的象征，可以看重长城隧道和赏景。
+    *   **亮点：** 穿越长城，感受历史的厚重和壮丽。
+    *   **交通：** 可以选择乘坐火车、或者自驾前往。
+*   **明十三陵：**  明清两代皇帝的陵墓，是了解明清历史的重要场所。
+    *   **亮点：** 陵墓建筑，墓葬内的文物，感受到皇家风范。
+    *   **交通：** 地铁1号线北宫店站，乘坐公交或出租车前往。
+
+**二、现代文化与艺术**
+
+*   **798艺术区：**  一个大型的现代艺术聚集地，聚集了众多艺术家的作品，可以感受当代艺术的魅力。
+    *   **亮点：** 艺术展览、画廊、咖啡馆。
+    *   **交通：** 地铁1号线西宁门站。
+*   **国家博物馆：**  中国最重要的国家级博物馆，馆藏丰富，涵盖了中国历史、文化和艺术。
+    *   **亮点：** 展品数量众多，涵盖各个历史时期和各个领域的文物和艺术品。
+    *   **交通：** 地铁1号线国贸站。
+*   **中央美术馆：**  中国最早的现代美术馆，展示了中国现代艺术的发展。
+    *   **亮点：** 展览、讲座，了解中国现代艺术的变迁。
+    *   **交通：** 地铁1号线国贸站。
+*   **首都文化艺术中心：**  聚集了北京众多艺术机构，如北京美术学院等。
+    *   **亮点：** 展览、演出，感受艺术的繁荣。
+    *   **交通：** 地铁1号线国贸站。
+
+**三、自然景观与休闲**
+
+*   **景山公园：**  北京的著名公园，有“绿肺”之称，拥有广阔的绿地、湖泊、山峦和历史建筑。
+    *   **亮点：** 湖泊、山峦、古建筑，感受自然风光。
+    *   **交通：** 地铁1号线国贸站。
+*   **四尔公园：**  位于北京中心商务区，被誉为“北京的纳帕蒂”，是休闲散步的好去处。
+    *   **亮点：** 湖泊、森林、河道，景色宜人。
+    *   **交通：** 地铁1号线国贸站。
+*   **南锣鼓巷：**  北京最古老的商业街之一，拥有许多特色小店、茶馆和酒吧，可以感受老北京的文化氛围。
+    *   **亮点：** 街头巷尾的商店，传统小吃，特色小店。
+    *   **交通：** 地铁1号线南局站。
+*   **什多公园：**  位于北京南部，是休闲游览的理想场所，有河、林、山、植物等多种景观。
+    *   **亮点：** 方便的交通，休闲的户外活动。
+    *   **交通：** 地铁1号线南局站
+
+**四、其他推荐**
+
+*   **北海公园：**  是北京最美的公园之一，拥有清澈的海水、鹅卵石、柳树和雕塑。
+*   **香山公园：**  位于北京郊区，可以欣赏到美丽的黄山景色，适合喜欢徒步的人。
+*   **京城三塔：**  北京的标志性建筑，可以拍照留念，感受北京的文化氛围。
+
+**为了更好地为您提供个性化的旅游建议，请告诉我以下信息：**
+
+1.  **旅行时间：** 预计旅行的日期是？
+2.  **旅行人群：**  是独自旅行、情侣旅行、家庭旅行还是朋友旅行？
+3.  **旅行预算：**  大概的预算是多少？ (例如：经济型、舒适型、豪华型)
+4.  **旅行偏好：**  您对哪些类型的景点或活动更感兴趣？ (例如：历史文化、自然风光、美食、购物等)
+5.  **出行方式：**  您计划如何出行？ (例如：飞机、火车、自驾等)
+6.  **住宿偏好：** 酒店类型或住宿地点偏好？（例如：舒适型、经济型、特色型等）
+
+告诉我这些信息后，我可以为您定制更完善的行程计划。
+2025-10-23T15:38:42.665+08:00  INFO 23336 --- [travel-planner] [           main] com.zluolan.zaiagent.app.TravelApp       : TravelApp with tools response: 好的，很高兴为您提供北京景点信息。北京拥有丰富的历史文化底蕴和现代魅力，以下是一些重点景点，我将根据不同人群和兴趣爱好进行分类，并提供详细的介绍和建议：
+
+**一、历史文化经典**
+
+*   **故宫（紫禁城）：** 作为中国现存规模最大、保存最完整的古代宫殿建筑群，是了解中国古代皇权政治的窗口。建议提前预约门票，并安排至少3-4小时参观。
+    *   **亮点：** 宫殿建筑、珍宝馆、御花园，感受皇家气派。
+    *   **交通：** 地铁1号线北宫店站。
+*   **天安门广场：**  中国历史的象征，每年春节和重要节假日都聚集人气。
+    *   **亮点：** 广场的历史、广场上的历史人物，感受历史的厚重。
+    *   **交通：** 地铁1号线天安门站。
+*   **颐和园：** 皇家园林，融合了中国古典园林艺术和中国传统建筑风格，是探索中国水水文化和园林艺术的绝佳场所。
+    *   **亮点：** 昆明湖、圆恩寺、万寿山、青莲峰等景点。
+    *   **交通：** 地铁2号线北宫门站。
+*   **长城：**  世界文化遗产，是中国的象征，可以看重长城隧道和赏景。
+    *   **亮点：** 穿越长城，感受历史的厚重和壮丽。
+    *   **交通：** 可以选择乘坐火车、或者自驾前往。
+*   **明十三陵：**  明清两代皇帝的陵墓，是了解明清历史的重要场所。
+    *   **亮点：** 陵墓建筑，墓葬内的文物，感受到皇家风范。
+    *   **交通：** 地铁1号线北宫店站，乘坐公交或出租车前往。
+
+**二、现代文化与艺术**
+
+*   **798艺术区：**  一个大型的现代艺术聚集地，聚集了众多艺术家的作品，可以感受当代艺术的魅力。
+    *   **亮点：** 艺术展览、画廊、咖啡馆。
+    *   **交通：** 地铁1号线西宁门站。
+*   **国家博物馆：**  中国最重要的国家级博物馆，馆藏丰富，涵盖了中国历史、文化和艺术。
+    *   **亮点：** 展品数量众多，涵盖各个历史时期和各个领域的文物和艺术品。
+    *   **交通：** 地铁1号线国贸站。
+*   **中央美术馆：**  中国最早的现代美术馆，展示了中国现代艺术的发展。
+    *   **亮点：** 展览、讲座，了解中国现代艺术的变迁。
+    *   **交通：** 地铁1号线国贸站。
+*   **首都文化艺术中心：**  聚集了北京众多艺术机构，如北京美术学院等。
+    *   **亮点：** 展览、演出，感受艺术的繁荣。
+    *   **交通：** 地铁1号线国贸站。
+
+**三、自然景观与休闲**
+
+*   **景山公园：**  北京的著名公园，有“绿肺”之称，拥有广阔的绿地、湖泊、山峦和历史建筑。
+    *   **亮点：** 湖泊、山峦、古建筑，感受自然风光。
+    *   **交通：** 地铁1号线国贸站。
+*   **四尔公园：**  位于北京中心商务区，被誉为“北京的纳帕蒂”，是休闲散步的好去处。
+    *   **亮点：** 湖泊、森林、河道，景色宜人。
+    *   **交通：** 地铁1号线国贸站。
+*   **南锣鼓巷：**  北京最古老的商业街之一，拥有许多特色小店、茶馆和酒吧，可以感受老北京的文化氛围。
+    *   **亮点：** 街头巷尾的商店，传统小吃，特色小店。
+    *   **交通：** 地铁1号线南局站。
+*   **什多公园：**  位于北京南部，是休闲游览的理想场所，有河、林、山、植物等多种景观。
+    *   **亮点：** 方便的交通，休闲的户外活动。
+    *   **交通：** 地铁1号线南局站
+
+**四、其他推荐**
+
+*   **北海公园：**  是北京最美的公园之一，拥有清澈的海水、鹅卵石、柳树和雕塑。
+*   **香山公园：**  位于北京郊区，可以欣赏到美丽的黄山景色，适合喜欢徒步的人。
+*   **京城三塔：**  北京的标志性建筑，可以拍照留念，感受北京的文化氛围。
+
+**为了更好地为您提供个性化的旅游建议，请告诉我以下信息：**
+
+1.  **旅行时间：** 预计旅行的日期是？
+2.  **旅行人群：**  是独自旅行、情侣旅行、家庭旅行还是朋友旅行？
+3.  **旅行预算：**  大概的预算是多少？ (例如：经济型、舒适型、豪华型)
+4.  **旅行偏好：**  您对哪些类型的景点或活动更感兴趣？ (例如：历史文化、自然风光、美食、购物等)
+5.  **出行方式：**  您计划如何出行？ (例如：飞机、火车、自驾等)
+6.  **住宿偏好：** 酒店类型或住宿地点偏好？（例如：舒适型、经济型、特色型等）
+
+告诉我这些信息后，我可以为您定制更完善的行程计划。
+工具聊天接口测试通过
+]]></system-out>
+  </testcase>
+  <testcase name="testChatWithMcp" classname="com.zluolan.zaiagent.controller.TravelControllerTest" time="1.568">
+    <system-out><![CDATA[2025-10-23T15:38:42.671+08:00  INFO 23336 --- [travel-planner] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-23T15:38:42.671+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-23T15:38:42.671+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-10-23T15:38:42.672+08:00  INFO 23336 --- [travel-planner] [           main] com.zluolan.zaiagent.app.TravelApp       : MCP服务已禁用，使用普通工具调用
+2025-10-23T15:38:42.673+08:00  INFO 23336 --- [travel-planner] [           main] c.z.zaiagent.advisor.MyLoggerAdvisor     : AI Request: 使用高德地图搜索北京景点
+2025-10-23T15:38:44.234+08:00  INFO 23336 --- [travel-planner] [           main] c.z.zaiagent.advisor.MyLoggerAdvisor     : AI Response: 好的，没问题！我现在将使用高德地图搜索北京景点。
+
+请您告诉我您想了解哪方面的景点？或者您有什么特别的兴趣爱好？例如：
+
+*   **历史文化景点？** (如故宫、天安门广场、颐和园、故宫博物院等)
+*   **现代艺术/商业景点？** (如798艺术区、三里屯、王府井等)
+*   **自然风光景点？** (如南锣鼓巷、什刹海、望京等)
+*   **主题公园？** (如北京动物园、中国地质公园等)
+*   **或者您有什么特定想了解的景点？** (比如，你想了解北京的特色美食，或者推荐适合儿童的景点?)
+
+告诉我您的偏好，我将为您查询高德地图，并提供详细的景点信息和建议。
+
+请告诉我您想探索的旅游方向，或者您有什么具体的问题，我会尽力为您解答！
+2025-10-23T15:38:44.235+08:00  INFO 23336 --- [travel-planner] [           main] com.zluolan.zaiagent.app.TravelApp       : TravelApp with tools response: 好的，没问题！我现在将使用高德地图搜索北京景点。
+
+请您告诉我您想了解哪方面的景点？或者您有什么特别的兴趣爱好？例如：
+
+*   **历史文化景点？** (如故宫、天安门广场、颐和园、故宫博物院等)
+*   **现代艺术/商业景点？** (如798艺术区、三里屯、王府井等)
+*   **自然风光景点？** (如南锣鼓巷、什刹海、望京等)
+*   **主题公园？** (如北京动物园、中国地质公园等)
+*   **或者您有什么特定想了解的景点？** (比如，你想了解北京的特色美食，或者推荐适合儿童的景点?)
+
+告诉我您的偏好，我将为您查询高德地图，并提供详细的景点信息和建议。
+
+请告诉我您想探索的旅游方向，或者您有什么具体的问题，我会尽力为您解答！
+MCP聊天接口测试通过
+]]></system-out>
+  </testcase>
+  <testcase name="testToolsAttraction" classname="com.zluolan.zaiagent.controller.TravelControllerTest" time="0.007">
+    <system-out><![CDATA[2025-10-23T15:38:44.241+08:00  INFO 23336 --- [travel-planner] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-23T15:38:44.241+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-23T15:38:44.242+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+景点工具接口测试通过
+]]></system-out>
+  </testcase>
+  <testcase name="testAgentChat" classname="com.zluolan.zaiagent.controller.TravelControllerTest" time="0.011">
+    <system-out><![CDATA[2025-10-23T15:38:44.249+08:00  INFO 23336 --- [travel-planner] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-23T15:38:44.249+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-23T15:38:44.250+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+智能体聊天接口测试通过
+]]></system-out>
+  </testcase>
+  <testcase name="testToolsHotel" classname="com.zluolan.zaiagent.controller.TravelControllerTest" time="0.007">
+    <system-out><![CDATA[2025-10-23T15:38:44.264+08:00  INFO 23336 --- [travel-planner] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-23T15:38:44.264+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-23T15:38:44.264+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+酒店工具接口测试通过
+]]></system-out>
+  </testcase>
+  <testcase name="testToolsRoute" classname="com.zluolan.zaiagent.controller.TravelControllerTest" time="0.007">
+    <system-out><![CDATA[2025-10-23T15:38:44.272+08:00  INFO 23336 --- [travel-planner] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-23T15:38:44.272+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-23T15:38:44.272+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+路线工具接口测试通过
+]]></system-out>
+  </testcase>
+  <testcase name="testToolsWeather" classname="com.zluolan.zaiagent.controller.TravelControllerTest" time="0.007">
+    <system-out><![CDATA[2025-10-23T15:38:44.279+08:00  INFO 23336 --- [travel-planner] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-10-23T15:38:44.279+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-10-23T15:38:44.280+08:00  INFO 23336 --- [travel-planner] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+天气工具接口测试通过
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,50 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  ai:
+    dashscope:
+      api-key: sk-eddbd1575fc9497685e11c5e04b8c657
+      chat:
+        options:
+          model: qwen-plus
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: gemma3:1b
+#    vectorstore:
+#      pgvector:
+#        index-type: HNSW
+#        dimensions: 1536
+#        distance-type: COSINE_DISTANCE
+#        max-document-batch-size: 10000
+    mcp:
+      client:
+        enabled: false
+        name: my-mcp-client
+        version: 1.0.0
+        request-timeout: 30s
+        type: SYNC
+        stdio:
+          servers-configuration: classpath:mcp-servers.json
+  # MySQL数据源配置（用于聊天记忆存储）
+  datasource:
+    url: jdbc:mysql://192.168.247.128:3306/ai_chat_memory?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # PostgreSQL数据源配置（用于向量存储）
+#  datasource:
+#    url: jdbc:postgresql://47.92.157.221:5432/z_ai_agent
+#    username: postgres
+#    password: 123
+#    driver-class-name: org.postgresql.Driver
+search-api:
+  api-key: SUqPZWtEHnUVCEJNx6wE9cpQ
+
+# 高德地图API配置
+amap:
+  api:
+    key: c35d3d557f6de34f7ecae355b99d9147
+

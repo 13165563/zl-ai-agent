@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.zluolan.zaiagent.agent.TravelPlanningAgentTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.204 s -- in com.zluolan.zaiagent.agent.TravelPlanningAgentTest
